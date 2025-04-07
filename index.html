@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart AI Credit Score Tracker</title>
+  <link rel="stylesheet" href="/styles/style.css"/>
+</head>
+<body>
+  <header>
+    <h1>Smart AI Credit Score Tracker</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Tips</a>
+      <a href="#">About</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Track, Predict, and Improve Your Credit Score</h2>
+    <p>Using static advice, AI-generated insights, and ML-style predictions</p>
+  </section>
+
+  <div class="container">
+    <div class="input-group">
+      <label for="scoreInput">Credit Score (300–850)</label>
+      <input type="number" id="scoreInput" min="300" max="850" placeholder="e.g. 720" />
+    </div>
+    <div class="input-group">
+      <label for="utilInput">Utilization (%)</label>
+      <input type="number" id="utilInput" min="0" max="100" placeholder="e.g. 45" />
+    </div>
+    <div class="input-group">
+      <label for="histInput">Credit History (years)</label>
+      <input type="number" id="histInput" min="0" max="50" placeholder="e.g. 5" />
+    </div>
+    <div class="input-group">
+      <label for="inqInput">Hard Inquiries</label>
+      <input type="number" id="inqInput" min="0" max="20" placeholder="e.g. 2" />
+    </div>
+
+    <button id="staticBtn">Static Tips</button>
+    <button id="mlBtn">ML Prediction</button>
+    <button id="aiBtn">AI Tips</button>
+
+    <div class="progress">
+      <div class="bar" id="progressBar"></div>
+    </div>
+
+    <div class="result" id="result"></div>
+  </div>
+
+  <footer class="footer">
+    <div class="company">
+      <h2 class="companyh1">Company</h2>
+      <ul class="companylist">
+        <li class="l">About</li>
+        <li class="l">Team</li>
+        <li class="l">Careers</li>
+        <li class="l">Privacy</li>
+      </ul>
+    </div>
+    <div class="connectwithus">
+      <h2>Connect with Us</h2>
+      <p id="icon">📧 💼 📱</p>
+    </div>
+  </footer>
+
+  <script src="scripts/app.js"></script>
+</body>
+</html>
